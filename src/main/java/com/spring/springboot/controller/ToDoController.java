@@ -1,4 +1,4 @@
-package com.spring.springboot;
+package com.spring.springboot.controller;
 
 import com.spring.springboot.dao.CassandraDAO;
 import com.spring.springboot.entity.ToDo;
@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/todo/")
-public class Controller {
+public class ToDoController {
 
     @Autowired
     private ToDoService toDoService;
