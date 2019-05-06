@@ -11,8 +11,6 @@ public interface ToDoService {
 
     ToDo update(ToDo entity);
 
-    ToDo getByTitle(String title);
-
     ToDo getById(UUID id);
 
     List<ToDo> getAll();

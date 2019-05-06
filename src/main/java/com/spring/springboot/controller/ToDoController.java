@@ -1,6 +1,5 @@
 package com.spring.springboot.controller;
 
-import com.spring.springboot.dao.CassandraDAO;
 import com.spring.springboot.entity.ToDo;
 import com.spring.springboot.service.ToDoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
-
 
 @RestController
 @RequestMapping("/todo/")

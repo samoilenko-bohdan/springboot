@@ -20,6 +20,7 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -52,7 +53,9 @@
             <artifactId>lombok</artifactId>
             <version>1.16.18</version>
         </dependency>
+
     </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -73,4 +76,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

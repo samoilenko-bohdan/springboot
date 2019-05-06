@@ -20,18 +20,11 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
     @Value("${cassandra.contact.points}")
     private String contactPoints;
 
-
-    /*
-     * Provide a contact point to the configuration.
-     */
     @Override
     public String getContactPoints() {
         return contactPoints;
     }
 
-    /*
-     * Provide a keyspace name to the configuration.
-     */
     @Override
     public String getKeyspaceName() {
         return keyspaceName;

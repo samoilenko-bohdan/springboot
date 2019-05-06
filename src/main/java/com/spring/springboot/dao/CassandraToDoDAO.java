@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 @Repository
-public interface CassandraDAO extends CrudRepository<ToDo, UUID> {
-    ToDo findToDoByTitle(String title);
+public interface CassandraToDoDAO extends CrudRepository<ToDo, UUID> {
+
     ToDo findToDoById(UUID id);
 }
