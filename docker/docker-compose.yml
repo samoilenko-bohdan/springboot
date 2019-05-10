@@ -1,4 +1,4 @@
-version : '3.7'
+version : '3'
 
 services :
 
@@ -6,6 +6,8 @@ services :
     container_name : cassandra
     image : cassandra
     restart : always
+    ports:
+      - 9042:9042
 
   config :
     image : hyness/spring-cloud-config-server
