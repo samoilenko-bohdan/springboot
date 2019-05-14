@@ -19,6 +19,8 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
     private String entityBasePackages;
     @Value("${cassandra.contact.points}")
     private String contactPoints;
+    @Value("${cassandra.port}")
+    private Integer port;
 
     @Override
     public String getContactPoints() {
@@ -48,6 +50,7 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
                 .createKeyspace(keyspaceName)
                 .ifNotExists()
                 .withSimpleReplication()));
+        cluster.setPort(port);
         return cluster;
     }
 }
